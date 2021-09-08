@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Music Explorer</string>
+    <string name="read_more_Default">read more...</string>
+    <string name="read_more_Activated">hide</string>
+    <string name="songs_title">Most Popular Songs:</string>
+    <string name="sampled_in">Sampled in</string>
+    <string name="remixes">Remixes</string>
+    <string name="writers">Writers:</string>
+    <string name="producers">Producers:</string>
+    <string name="about">About:</string>
+    <string name="powered_by">Powered by Genius API and RapidAPI Services</string>
+    <string name="no_network_connection">No Network Connection</string>
+    <string name="music_explorer">Music \nExplorer</string>
+    <string name="search_songs_here">Search songs here</string>
+    <string name="songname">SongName</string>
+    <string name="artistname">ArtistName</string>
+    <string name="by">by</string>
+    <string name="release_date">Release date:</string>
+    <string name="pageviews">Pageviews:</string>
+    <string name="is_featured_on">Is featured on:</string>
+</resources>
