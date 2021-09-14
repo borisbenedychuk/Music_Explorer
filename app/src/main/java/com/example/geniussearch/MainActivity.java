@@ -91,7 +91,14 @@ public class MainActivity extends AppCompatActivity implements MainMethods {
                     }
                 })
                 .subscribeOn(Schedulers.io())
-                .debounce(400, TimeUnit.MILLISECONDS);
+                .switchMap(new Function<String, ObservableSource<? extends String>>() {
+                    @Override
+                    public ObservableSource<? extends String> apply(@NonNull String s) throws Exception {
+                        presenter.disposeDisposable();
+                        return Observable.just(s);
+                    }
+                });
+
         disposable = queryString.observeOn(AndroidSchedulers.mainThread())
                 .subscribe(new Consumer<String>() {
             @Override

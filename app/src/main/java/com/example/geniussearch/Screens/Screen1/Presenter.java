@@ -79,6 +79,6 @@ public class Presenter {
     }
 
     public void disposeDisposable () {
-        compositeDisposable.dispose();
+        compositeDisposable.clear();
     }
 }
