@@ -24,4 +24,5 @@ public interface SongMethods {
     void showSongRelation (List<SongRelation> songRelations);
     void showWriterArtists (List <WriterArtist> writerArtists);
     void noNetwork ();
+    void showContent ();
 }

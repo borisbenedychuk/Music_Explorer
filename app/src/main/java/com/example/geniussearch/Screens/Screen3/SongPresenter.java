@@ -74,6 +74,7 @@ public class SongPresenter {
                         songMethods.showMediaLinks(medias);
                         PrimaryArtist primaryArtist = song.getArtist();
                         songMethods.showPrimaryArtist(primaryArtist);
+                        songMethods.showContent();
                     }
                 }, new Consumer<Throwable>() {
                     @Override

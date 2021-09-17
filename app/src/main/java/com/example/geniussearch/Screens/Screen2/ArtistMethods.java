@@ -10,4 +10,5 @@ public interface ArtistMethods {
     void showArtistInfo (ArtistInfo artistInfo);
     void showArtistTopSongs (List<Song> songList);
     void noNetwork ();
+    void showContent ();
 }

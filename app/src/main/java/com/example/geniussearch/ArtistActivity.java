@@ -96,7 +96,7 @@ public class ArtistActivity extends AppCompatActivity implements ArtistMethods {
                     params.height = ViewGroup.LayoutParams.WRAP_CONTENT;
                     textViewReadMore.setText(getString(R.string.read_more_Activated));
                     isExpanded = true;
-                } else if (isExpanded) {
+                } else {
                     params.height = convertDpToPx(150);
                     textViewReadMore.setText(getString(R.string.read_more_Default));
                     isExpanded = false;
@@ -166,10 +166,13 @@ public class ArtistActivity extends AppCompatActivity implements ArtistMethods {
                 textViewAbout.setVisibility(View.GONE);
             }
         }
+    }
+
+    @Override
+    public void showContent() {
         scrollViewArtist.setVisibility(View.VISIBLE);
         imageViewLoading.setVisibility(View.GONE);
         progressBarLoading.setVisibility(View.GONE);
-
     }
 
     @Override

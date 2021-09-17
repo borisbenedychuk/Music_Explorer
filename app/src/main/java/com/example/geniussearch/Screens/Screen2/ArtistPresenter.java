@@ -47,6 +47,7 @@ public class ArtistPresenter {
                         ArtistInfo artistInfo = artistResponse.getResponse().getArtist();
                         JsonArray jsonArray = artistInfo.getDescription().getDom().getChildren();
                         methods.showArtistInfo(artistInfo);
+                        methods.showContent();
                     }
                 }, new Consumer<Throwable>() {
                     @Override

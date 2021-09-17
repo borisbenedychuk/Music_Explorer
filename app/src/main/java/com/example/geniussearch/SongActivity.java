@@ -192,6 +192,13 @@ public class SongActivity extends AppCompatActivity implements SongMethods {
     }
 
     @Override
+    public void showContent() {
+        scrollViewSong.setVisibility(View.VISIBLE);
+        imageViewLoading.setVisibility(View.GONE);
+        progressBar.setVisibility(View.GONE);
+    }
+
+    @Override
     public void showSongStats(Stats stats) {
         if (stats.getPageViews() > 1000) {
             textViewPageViews.setText(String.valueOf(new DecimalFormat("0,000").format(stats.getPageViews())));
@@ -292,9 +299,7 @@ public class SongActivity extends AppCompatActivity implements SongMethods {
                 startActivity(intentOut);
             }
         });
-        scrollViewSong.setVisibility(View.VISIBLE);
-        imageViewLoading.setVisibility(View.GONE);
-        progressBar.setVisibility(View.GONE);
+
 
     }
 
